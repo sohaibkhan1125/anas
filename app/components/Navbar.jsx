@@ -41,23 +41,25 @@ const Navbar = () => {
                 Text to Speech
               </Link>
               <Link
-                href="/about"
+                href="/content-summarizer"
                 className="text-white hover:bg-[#0A21C0] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
-                About
+                Content Summarizer
               </Link>
+              <Link
+                href="/image-background-remover"
+                className="text-white hover:bg-[#0A21C0] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              >
+                Image Background Remover
+              </Link>
+              
               <Link
                 href="/contact"
                 className="text-white hover:bg-[#0A21C0] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
                 Contact
               </Link>
-              <Link
-                href="/privacy-policy"
-                className="text-white hover:bg-[#0A21C0] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
-              >
-                Privacy Policy
-              </Link>
+             
             </div>
           </div>
 
@@ -65,7 +67,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-[#0A21C0] focus:outline-none"
+              className="inline-flex cursor-pointer items-center justify-center p-2 rounded-md text-white hover:bg-[#0A21C0] focus:outline-none"
             >
               <span className="sr-only">Open main menu</span>
               {!isMenuOpen ? (
@@ -114,20 +116,28 @@ const Navbar = () => {
           >
             Home
           </Link>
-          <Link
-            href="/about"
-            className="text-white hover:bg-[#0A21C0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            About
-          </Link>
-          <Link
-            href="/services"
-            className="text-white hover:bg-[#0A21C0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Services
-          </Link>
+            <Link
+              href="/text-to-speech"
+              className="text-white hover:bg-[#0A21C0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Text to Speech
+            </Link>
+            <Link
+              href="/content-summarizer"
+              className="text-white hover:bg-[#0A21C0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Content Summarizer
+            </Link>
+            <Link
+              href="/image-background-remover"
+              className="text-white hover:bg-[#0A21C0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Image Background Remover
+            </Link>
+         
           <Link
             href="/contact"
             className="text-white hover:bg-[#0A21C0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"

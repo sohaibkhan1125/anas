@@ -54,10 +54,10 @@ const Navbar = () => {
               </Link>
               
               <Link
-                href="/contact"
+                href="/socialmedia-post-generator"
                 className="text-white hover:bg-[#0A21C0] px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
               >
-                Contact
+                Social Media Post Generator
               </Link>
              
             </div>
@@ -139,11 +139,11 @@ const Navbar = () => {
             </Link>
          
           <Link
-            href="/contact"
+            href="/socialmedia-post-generator"
             className="text-white hover:bg-[#0A21C0] block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
             onClick={() => setIsMenuOpen(false)}
           >
-            Contact
+            Social Media Post Generator
           </Link>
         </div>
       </div>

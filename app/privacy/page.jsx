@@ -1,15 +1,15 @@
 'use client';
 
 import Navbar from '../components/Navbar';
-import ContactForm from './components/Contact';
+import Privacy from './components/Privacy';
 
-export default function ContactPage() {
+export default function PrivacyPage() {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <ContactForm />
+        <Privacy />
       </main>
     </div>
   );
-}
+} 

@@ -184,7 +184,7 @@ const TextToSpeech = () => {
         </div>
       </div>
     </main>
-    <Footer/>
+   
     </section>
   );
 };

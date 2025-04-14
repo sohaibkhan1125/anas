@@ -203,7 +203,7 @@ const ImageBackgroundRemover = () => {
           </div>
         </div>
       </main>
-      <Footer />
+     
     </div>
   );
 };

@@ -173,7 +173,7 @@ const ContentSummarizer = () => {
           </div>
         </div>
       </main>
-      <Footer />
+      
     </div>
   );
 };

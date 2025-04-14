@@ -193,7 +193,7 @@ const SocialMediaPostGenerator = () => {
           </div>
         </div>
       </main>
-      <Footer />
+      
     </div>
   );
 };

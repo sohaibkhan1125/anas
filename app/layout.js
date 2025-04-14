@@ -1,11 +1,38 @@
 import { Inter } from 'next/font/google';
 import './globals.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export const metadata = {
-  title: "AI Image Generator",
-  description: "AI Image Generator",
+  title: 'AI Tools Hub',
+  description: 'Your one-stop destination for powerful AI tools including image generation, text-to-speech, and content summarization.',
+  keywords: ['AI tools', 'image generation', 'text to speech', 'content summarization', 'AI services'],
+  verification: {
+    google: 'oDaLN7DK2deaVZGO5lUgmHs34kq7MBQ-seWYJLgfank',
+  },
+  openGraph: {
+    title: 'AI Tools Hub - Powerful AI Tools for Everyone',
+    description: 'Access a suite of powerful AI tools including image generation, text-to-speech, and content summarization.',
+    images: [
+      {
+        url: '/ai-tools-preview.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'AI Tools Hub Preview',
+      },
+    ],
+  },
+  twitter: {
+    title: 'AI Tools Hub - Powerful AI Tools for Everyone',
+    description: 'Access a suite of powerful AI tools including image generation, text-to-speech, and content summarization.',
+    images: ['/ai-tools-preview.jpg'],
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -14,14 +41,16 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-          integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
       </head>
-      <body className={inter.className}>
+      <body className={`${inter.variable} font-sans`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

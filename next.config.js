@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['image.lexica.art', 'api.remove.bg'],
+    domains: ['image.lexica.art'],
     unoptimized: true,
   },
   experimental: {

@@ -14,7 +14,7 @@ export const metadata = {
   description: 'Your one-stop destination for powerful AI tools including image generation, text-to-speech, and content summarization.',
   keywords: ['AI tools', 'image generation', 'text to speech', 'content summarization', 'AI services'],
   verification: {
-    google: 'oDaLN7DK2deaVZGO5lUgmHs34kq7MBQ-seWYJLgfank',
+    google: 'oDaLN7DK2deaVZGO5lUgmHs34kq7MBQ-seWYJLgfank', // already in use
   },
   openGraph: {
     title: 'AI Tools Hub - Powerful AI Tools for Everyone',
@@ -39,6 +39,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="D92MSNQkQvhkB2Kn_zqk7welMO_2Ap3c8iFbnh5CV7I" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"

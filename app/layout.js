@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="D92MSNQkQvhkB2Kn_zqk7welMO_2Ap3c8iFbnh5CV7I" />
+        <meta name="google-site-verification" content="O2REvC1tC3LYBn9MOEmsJTy5AhCjtOityMvlqeIdkyg" />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
